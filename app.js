@@ -105,6 +105,26 @@ dotButton.addEventListener('click', appendDot);
 document.addEventListener('keydown', (event) => {
   if (event.key >= 0 && event.key <= 9) appendNumber(event.key);
   if (event.key === '.') appendDot();
+  if (event.key === '+') {
+    chooseOperation('+');
+    updateDisplay();
+  }
+  if (event.key === '-') {
+    chooseOperation('-');
+    updateDisplay();
+  }
+  if (event.key === '*') {
+    chooseOperation('*');
+    updateDisplay();
+  }
+  if (event.key === '/') {
+    chooseOperation('/');
+    updateDisplay();
+  }
+  if (event.key === '^' || event.key === 'x') {
+    chooseOperation('^');
+    updateDisplay();
+  }
   if (event.key === 'Enter' || event.key === '=') compute();
   if (event.key === 'Backspace') deleteNumber();
   if (event.key === 'Escape') clear();
