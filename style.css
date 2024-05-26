@@ -58,3 +58,33 @@ button.operation:hover {
 button.span-two {
   width: calc(40% + 15px);
 }
+
+#keyboard-instructions {
+  margin: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #32070f;
+  background: linear-gradient(to right, #ceaf13, #d76d77, #350eab);
+}
+
+#keyboard-instructions p {
+    color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#keyboard-instructions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#keyboard-instructions li {
+    color: white;
+  margin-bottom: 5px;
+}
+
+#keyboard-instructions li strong {
+  font-weight: bold;
+  color: #0066ff; /* Change color as needed */
+}
